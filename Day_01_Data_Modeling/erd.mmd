@@ -1,0 +1,12 @@
+erDiagram
+  DIM_DATE ||--o{ FACT_USAGE_COST : date_key
+  DIM_ACCOUNT ||--o{ FACT_USAGE_COST : account_key
+  DIM_RESOURCE ||--o{ FACT_USAGE_COST : resource_key
+  DIM_REGION ||--o{ FACT_USAGE_COST : region_key
+  DIM_TAG o|--o{ FACT_USAGE_COST : tag_key
+  DIM_DATE { int date_key PK string full_date }
+  DIM_ACCOUNT { int account_key PK string account_id }
+  DIM_RESOURCE { int resource_key PK string resource_id string service }
+  DIM_REGION { int region_key PK string region_name }
+  DIM_TAG { int tag_key PK string tag_name string tag_value }
+  FACT_USAGE_COST { int usage_key PK int date_key FK int account_key FK int resource_key FK int region_key FK int tag_key FK float usage_quantity float cost_usd }

@@ -1,0 +1,2 @@
+# Day 20 — FinOps Data Platform Capstone Integration
+The capstone connects the sample source data, ingestion, quality checks, SQL analytics, anomaly detection, tagging audit and dashboard concepts. Review the architecture diagram, update paths/configuration, write setup instructions and include your own screenshots, test results and measured findings. This repository is a local demo scaffold, not a deployed enterprise platform.

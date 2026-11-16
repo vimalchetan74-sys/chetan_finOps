@@ -1,0 +1,10 @@
+flowchart LR
+  A[Cloud Billing CSV / CUR] --> B[Python Ingestion]
+  B --> C[Data Quality Checks]
+  C --> D[Warehouse Star Schema]
+  D --> E[SQL Analytics]
+  E --> F[FinOps Dashboard]
+  B --> G[Cost Anomaly Detection]
+  G --> H[Alert Channel - future integration]
+  I[Asset Inventory] --> J[Tagging Audit]
+  J --> E

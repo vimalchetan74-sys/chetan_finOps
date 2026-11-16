@@ -1,0 +1,2 @@
+# Day 17 — Infrastructure as Code Cost Estimation
+`main.tf` is a safe local Terraform example and does not provision billable cloud resources. To demonstrate Infracost, install Terraform and Infracost, configure a reviewed cloud-resource Terraform sample, run `terraform init`, `terraform plan -out=tfplan`, then `infracost breakdown --path .` and save the output. Never commit cloud credentials or state files.

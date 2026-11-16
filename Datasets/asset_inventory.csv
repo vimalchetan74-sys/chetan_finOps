@@ -1,0 +1,6 @@
+account_id,resource_id,service,region,environment,owner,team,status
+acct-001,vm-01,Compute,us-east-1,production,owner,platform,active
+acct-001,disk-01,Storage,us-east-1,production,owner,platform,active
+acct-002,vm-02,Compute,ap-south-1,dev,owner,analytics,active
+acct-003,orphan-09,Networking,eu-west-1,,,,orphaned
+acct-004,lb-02,Networking,us-west-2,,,,active

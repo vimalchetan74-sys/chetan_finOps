@@ -1,0 +1,2 @@
+# Day 4 — Cloud Billing Data Architectures (AWS CUR / Azure Cost)
+Use the synthetic common billing extract as a stand-in for CUR/Azure exports. `profile_billing.py` groups cost and usage by service and calculates percentage contribution. For a real provider export, map native columns (line item usage type, product/service, region, account/subscription, tags, blended/unblended cost) into the normalized fields. Save a notebook or screenshots showing distribution by service and usage type.

@@ -1,0 +1,14 @@
+{
+  "policy_name": "sample-cloud-billing-archive",
+  "scope": "replace-with-approved-bucket-or-container",
+  "rules": [
+    {"prefix": "raw/", "transition_after_days": 30, "target_tier": "infrequent_access"},
+    {"prefix": "raw/", "transition_after_days": 180, "target_tier": "archive"},
+    {"prefix": "temporary/", "expire_after_days": 30}
+  ],
+  "safety": {
+    "exclude_legal_hold": true,
+    "test_on_nonproduction_data": true,
+    "require_owner_approval": true
+  }
+}

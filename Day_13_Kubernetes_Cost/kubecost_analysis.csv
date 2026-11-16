@@ -1,0 +1,4 @@
+namespace,pod,cpu_request_cores,cpu_actual_cores,memory_request_gib,memory_actual_gib,monthly_cost_usd
+payments,payments-api-1,2.0,0.6,4.0,1.8,180
+analytics,worker-1,4.0,3.6,8.0,7.2,320
+web,frontend-1,1.0,0.2,2.0,0.7,95
